@@ -1,4 +1,4 @@
-# gstreamer に関するチートシート
+# gstreamer に関するメモ
 
 | soft                | version |
 | ------------------- | ------- |
@@ -7,7 +7,9 @@
 
 # gst-rtsp-server のビルド
 
-XXX: 古いバージョンだと<gstreamer>/bin に pkg-config.exe が同梱されていないので、Windows ビルドができない。（pkg-config）に頼らずに手動で依存のパスを指定すれば問題ないかもしれないが、実現できていない。
+[ref](https://stackoverflow.com/a/66766874/18633169)
+
+_古いバージョンだと<gstreamer>/bin に pkg-config.exe が同梱されてかも。pkl-config がないと Windows ビルドが難しい。（pkg-config）に頼らずに手動で依存のパスを指定すれば問題ないかもしれないが、実現できていない。_
 
 ```bat
 rem 1.20.1はgithub上ではまだtagがないので、releaseページからtar.xzファイルをダウンロードして解答する。
